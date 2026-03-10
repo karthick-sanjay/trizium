@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TRIZIUM — Data-Driven Digital Marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════ LOADER ═══════════════════════════ -->
+<div id="loader">
+  <div class="loader-inner">
+    <img src="src/trizium_logo_circle.png" class="loader-logo" alt="Trizium Logo"/>
+    <span class="loader-text">TRIZIUM</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">
+  <img src="src/trizium_logo.jpeg" width="60" height="60" alt="Trizium Logo" class="logo_image"/>
+  Trizium<span> Digital Marketing</span>
+</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+    <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+    <li><a href="#portfolio" onclick="closeMobileMenu()">Work</a></li>
+    <li><a href="#clients" onclick="closeMobileMenu()">Clients</a></li>
+    <li><a href="#pricing" onclick="closeMobileMenu()">Pricing</a></li>
+    <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    <li><a href="#contact" class="btn btn-primary" onclick="closeMobileMenu()">Get Started</a></li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-blob blob-3"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge reveal-up">
+      <span class="badge-dot"></span>
+      Trusted by 20+ Brands
+    </div>
+    <h1 class="hero-title reveal-up delay-1">
+      Grow Your Business With<br/>
+      <span class="gradient-text">Data-Driven</span><br/>
+      Digital Marketing
+    </h1>
+    <p class="hero-desc reveal-up delay-2">
+      We blend creativity with analytics to craft digital strategies that don't just look good — they deliver measurable results and exponential growth.
+    </p>
+    <div class="hero-actions reveal-up delay-3">
+      <a href="#contact" class="btn btn-primary btn-lg">
+        Get Started
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#services" class="btn btn-outline btn-lg">
+        View Services
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+      </a>
+    </div>
+    <div class="hero-stats reveal-up delay-4">
+      <div class="stat">
+        <span class="stat-num" data-target="20">0</span><span>+</span>
+        <span class="stat-label">Clients Served</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="98">0</span><span>%</span>
+        <span class="stat-label">Client Retention</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="2">0</span><span>+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual reveal-right delay-2">
+    <div class="hero-card glass-card">
+      <div class="hc-header">
+        <div class="hc-dot red"></div>
+        <div class="hc-dot yellow"></div>
+        <div class="hc-dot green"></div>
+        <span>Campaign Analytics</span>
+      </div>
+      
+      <div class="hc-metric">
+        <span class="metric-up">↑ 142%</span> ROI Growth This Quarter
+      </div>
+    </div>
+    <div class="hero-pill pill-3 glass-pill">
+      <span>⚡</span> Real-time Tracking
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal-left">
+        <div class="about-img-main img-placeholder">
+          <div class="img-overlay-text">
+            <strong>2+ Years</strong>
+            <span>of Digital Excellence</span>
+          </div>
+        </div>
+        <div class="about-img-accent img-placeholder-sm"></div>
+    
+      </div>
+      <div class="about-content reveal-right">
+        <div class="section-tag">About Trizium</div>
+        <h2 class="section-title">We Are The Growth Partner <span class="gradient-text">You've Been Waiting For</span></h2>
+        <p class="about-desc">Founded in 2024, Trizium has been at the forefront of digital transformation. We don't just run campaigns — we architect growth ecosystems that drive sustainable revenue and brand authority.</p>
+        <div class="mv-grid">
+          <div class="mv-card">
+            <div class="mv-icon">🎯</div>
+            <strong>Our Mission</strong>
+            <p>To empower businesses with data-driven strategies that create real, measurable impact in the digital world.</p>
+          </div>
+          <div class="mv-card">
+            <div class="mv-icon">🔭</div>
+            <strong>Our Vision</strong>
+            <p>To be the most trusted digital growth partner for ambitious brands scaling to new heights globally.</p>
+          </div>
+        </div>
+        <div class="about-pillars">
+          <div class="pillar"><span class="pillar-icon">🧠</span> Expert Team of 15+</div>
+          <div class="pillar"><span class="pillar-icon">🌍</span> Global Clientele</div>
+          <div class="pillar"><span class="pillar-icon">📊</span> Data-First Approach</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ SERVICES ═══════════════════════════ -->
+<section id="services" class="section-dark">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <div class="section-tag">What We Do</div>
+      <h2 class="section-title">Services Built To <span class="gradient-text">Scale Your Brand</span></h2>
+      <p class="section-sub">A full-spectrum digital agency offering every tool you need to dominate your market.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal-up delay-1">
+        <div class="sc-icon-wrap">
+          <svg class="sc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <h3>SEO Optimization</h3>
+        <p>Dominate search rankings with technical SEO, content strategy, and authoritative link building that drives organic traffic.</p>
+        <a href="#contact" class="sc-link">Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="service-card reveal-up delay-2">
+        <div class="sc-icon-wrap">
+          <svg class="sc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="17" cy="7" r="2"/><path d="M14 9.5c.5 1 1.5 2 3 2"/></svg>
+        </div>
+        <h3>Social Media Marketing</h3>
+        <p>Build engaged communities and viral content across all major platforms that convert followers into loyal customers.</p>
+        <a href="#contact" class="sc-link">Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="service-card reveal-up delay-3">
+        <div class="sc-icon-wrap">
+          <svg class="sc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+        <h3>Google Ads / PPC</h3>
+        <p>Precision-targeted paid campaigns that maximize ROAS with AI-optimized bidding, compelling copy, and A/B testing.</p>
+        <a href="#contact" class="sc-link">Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="service-card reveal-up delay-1">
+        <div class="sc-icon-wrap">
+          <svg class="sc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        </div>
+        <h3>Content Marketing</h3>
+        <p>Strategic storytelling through blogs, videos, and infographics that build authority and nurture your audience at every funnel stage.</p>
+        <a href="#contact" class="sc-link">Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="service-card reveal-up delay-2">
+        <div class="sc-icon-wrap">
+          <svg class="sc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Web Development</h3>
+        <p>High-converting, blazing-fast websites and landing pages engineered for performance, UX, and seamless conversion optimization.</p>
+        <a href="#contact" class="sc-link">Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="service-card reveal-up delay-3">
+        <div class="sc-icon-wrap">
+          <svg class="sc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Branding Strategy</h3>
+        <p>Define your brand identity with purpose-driven positioning, visual design systems, and messaging that resonates deeply.</p>
+        <a href="#contact" class="sc-link">Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PORTFOLIO ═══════════════════════════ -->
+<section id="portfolio">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <div class="section-tag">Our Work</div>
+      <h2 class="section-title">Results That <span class="gradient-text">Speak Louder</span></h2>
+      <p class="section-sub">A selection of our most impactful campaigns and digital transformations.</p>
+    </div>
+    <div class="portfolio-filter reveal-up delay-1">
+      <button class="pf-btn active" data-filter="all">All</button>
+      <button class="pf-btn" data-filter="seo">SEO</button>
+      <button class="pf-btn" data-filter="social">Social</button>
+      <button class="pf-btn" data-filter="ads">PPC</button>
+      <button class="pf-btn" data-filter="web">Web</button>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-item reveal-up delay-1" data-category="seo">
+        <div class="pi-img pi-img-1">
+          <div class="pi-overlay">
+            <div class="pi-info">
+              <span class="pi-tag">SEO</span>
+              <h4>TechNova Corp</h4>
+              <p>300% organic traffic increase in 6 months</p>
+              <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item reveal-up delay-2" data-category="social">
+        <div class="pi-img pi-img-2">
+          <div class="pi-overlay">
+            <div class="pi-info">
+              <span class="pi-tag">Social Media</span>
+              <h4>Luxe Apparel</h4>
+              <p>1.2M followers gained in 90 days</p>
+              <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item reveal-up delay-3" data-category="ads">
+        <div class="pi-img pi-img-3">
+          <div class="pi-overlay">
+            <div class="pi-info">
+              <span class="pi-tag">Google Ads</span>
+              <h4>FinEdge Solutions</h4>
+              <p>4.8x ROAS with $500K ad spend</p>
+              <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item reveal-up delay-1" data-category="web">
+        <div class="pi-img pi-img-4">
+          <div class="pi-overlay">
+            <div class="pi-info">
+              <span class="pi-tag">Web Dev</span>
+              <h4>MediCore Health</h4>
+              <p>New site launched with 55% higher conversions</p>
+              <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item reveal-up delay-2" data-category="seo">
+        <div class="pi-img pi-img-5">
+          <div class="pi-overlay">
+            <div class="pi-info">
+              <span class="pi-tag">SEO + Content</span>
+              <h4>GreenLeaf Eco</h4>
+              <p>500% rise in branded keyword traffic</p>
+              <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item reveal-up delay-3" data-category="social ads">
+        <div class="pi-img pi-img-6">
+          <div class="pi-overlay">
+            <div class="pi-info">
+              <span class="pi-tag">Branding</span>
+              <h4>Apex Real Estate</h4>
+              <p>Complete rebrand driving 210% lead growth</p>
+              <a href="#" class="btn btn-primary btn-sm">View Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CLIENTS ═══════════════════════════ -->
+<section id="clients" class="section-dark">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <div class="section-tag">Trusted By</div>
+      <h2 class="section-title">Brands That <span class="gradient-text">Trust Our Expertise</span></h2>
+    </div>
+    <div class="clients-track-wrap reveal-up delay-1">
+      <div class="clients-track">
+        <div class="client-logo">TechNova</div>
+        <div class="client-logo">LuxeWear</div>
+        <div class="client-logo">FinEdge</div>
+        <div class="client-logo">MediCore</div>
+        <div class="client-logo">GreenLeaf</div>
+        <div class="client-logo">ApexRE</div>
+        <div class="client-logo">CloudSync</div>
+        <div class="client-logo">UrbanEats</div>
+        <!-- Duplicate for seamless loop -->
+        <div class="client-logo">TechNova</div>
+        <div class="client-logo">LuxeWear</div>
+        <div class="client-logo">FinEdge</div>
+        <div class="client-logo">MediCore</div>
+        <div class="client-logo">GreenLeaf</div>
+        <div class="client-logo">ApexRE</div>
+        <div class="client-logo">CloudSync</div>
+        <div class="client-logo">UrbanEats</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ TESTIMONIALS ═══════════════════════════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <div class="section-tag">Client Love</div>
+      <h2 class="section-title">What Our Clients <span class="gradient-text">Actually Say</span></h2>
+    </div>
+    <div class="testimonials-slider reveal-up delay-1">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card glass-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"NexaGrowth transformed our online presence completely. Our leads tripled within 4 months and we've never looked back. The team's analytical approach is unmatched."</p>
+          <div class="testi-author">
+            <div class="testi-avatar ta-1">SR</div>
+            <div>
+              <strong>Sarah Reynolds</strong>
+              <span>CMO, TechNova Corp</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card glass-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The ROI from their Google Ads management has been absolutely incredible — 4.8x return on every dollar spent. They're not just vendors, they're growth partners."</p>
+          <div class="testi-author">
+            <div class="testi-avatar ta-2">MK</div>
+            <div>
+              <strong>Marcus Kim</strong>
+              <span>CEO, FinEdge Solutions</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card glass-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"From branding to SEO to social, NexaGrowth handles everything with expertise. Our Instagram went from 10K to 1.2M followers. Absolutely phenomenal results."</p>
+          <div class="testi-author">
+            <div class="testi-avatar ta-3">AL</div>
+            <div>
+              <strong>Aisha Laurent</strong>
+              <span>Founder, Luxe Apparel</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card glass-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Our new website designed by NexaGrowth converts at 55% higher than our old one. Clean, fast, and built to sell. Best investment we've made this year."</p>
+          <div class="testi-author">
+            <div class="testi-avatar ta-4">JP</div>
+            <div>
+              <strong>James Park</strong>
+              <span>Director, MediCore Health</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-controls">
+        <button class="testi-btn" id="prevBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="testi-btn" id="nextBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PRICING ═══════════════════════════ -->
+<section id="pricing" class="section-dark">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <div class="section-tag">Pricing Plans</div>
+      <h2 class="section-title">Transparent Pricing, <span class="gradient-text">Premium Value</span></h2>
+      <p class="section-sub">Flexible plans designed for every stage of your business growth journey.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal-up delay-1">
+        <div class="pc-header">
+          <span class="pc-plan">Starter</span>
+          <div class="pc-price">
+            <span class="pc-currency">$</span>
+            <span class="pc-amount">799</span>
+            <span class="pc-period">/mo</span>
+          </div>
+          <p>Perfect for small businesses getting started online</p>
+        </div>
+        <ul class="pc-features">
+          <li><span class="fc-check">✓</span> SEO Audit & Setup</li>
+          <li><span class="fc-check">✓</span> 2 Social Media Platforms</li>
+          <li><span class="fc-check">✓</span> Basic Google Ads Management</li>
+          <li><span class="fc-check">✓</span> 4 Blog Posts/Month</li>
+          <li><span class="fc-check">✓</span> Monthly Analytics Report</li>
+          <li class="fc-disabled"><span class="fc-x">✗</span> Custom Landing Pages</li>
+          <li class="fc-disabled"><span class="fc-x">✗</span> Dedicated Account Manager</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline pc-btn">Get Starter Plan</a>
+      </div>
+
+      <div class="pricing-card pricing-card-featured reveal-up delay-2">
+        <div class="pc-badge">Most Popular</div>
+        <div class="pc-header">
+          <span class="pc-plan">Growth</span>
+          <div class="pc-price">
+            <span class="pc-currency">$</span>
+            <span class="pc-amount">1,999</span>
+            <span class="pc-period">/mo</span>
+          </div>
+          <p>For growing businesses ready to scale aggressively</p>
+        </div>
+        <ul class="pc-features">
+          <li><span class="fc-check">✓</span> Full SEO Strategy</li>
+          <li><span class="fc-check">✓</span> 4 Social Media Platforms</li>
+          <li><span class="fc-check">✓</span> Advanced PPC Management</li>
+          <li><span class="fc-check">✓</span> 10 Blog Posts/Month</li>
+          <li><span class="fc-check">✓</span> Bi-weekly Analytics Reports</li>
+          <li><span class="fc-check">✓</span> 2 Custom Landing Pages</li>
+          <li><span class="fc-check">✓</span> Dedicated Account Manager</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary pc-btn">Get Growth Plan</a>
+      </div>
+
+      <div class="pricing-card reveal-up delay-3">
+        <div class="pc-header">
+          <span class="pc-plan">Enterprise</span>
+          <div class="pc-price">
+            <span class="pc-currency">$</span>
+            <span class="pc-amount">4,999</span>
+            <span class="pc-period">/mo</span>
+          </div>
+          <p>Full-suite solution for enterprise-level brands</p>
+        </div>
+        <ul class="pc-features">
+          <li><span class="fc-check">✓</span> Comprehensive SEO Domination</li>
+          <li><span class="fc-check">✓</span> All Social Platforms + Influencers</li>
+          <li><span class="fc-check">✓</span> Multi-channel Ad Campaigns</li>
+          <li><span class="fc-check">✓</span> Unlimited Content Creation</li>
+          <li><span class="fc-check">✓</span> Real-time Analytics Dashboard</li>
+          <li><span class="fc-check">✓</span> Unlimited Landing Pages</li>
+          <li><span class="fc-check">✓</span> Priority 24/7 Support</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline pc-btn">Get Enterprise Plan</a>
+      </div>
+    </div>
+    <p class="pricing-note reveal-up delay-4">All plans include a free 30-day trial. No contracts. Cancel anytime. <a href="#contact">Need something custom?</a></p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <div class="section-tag">Contact Us</div>
+      <h2 class="section-title">Let's Build Something <span class="gradient-text">Extraordinary</span></h2>
+      <p class="section-sub">Ready to transform your digital presence? Drop us a message and we'll get back within 24 hours.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <div class="ci-item">
+          <div class="ci-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <strong>Email Us</strong>
+            <a href="mailto:hello@nexagrowth.com">hello@nexagrowth.com</a>
+          </div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91A16 16 0 0 0 15.1 15.9l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 23 16.92z"/></svg>
+          </div>
+          <div>
+            <strong>Call Us</strong>
+            <a href="tel:+919876543210">+91 98765 43210</a>
+          </div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <strong>Visit Us</strong>
+            <span>12th Floor, Nexus Tower,<br/>Bandra Kurla Complex, Mumbai</span>
+          </div>
+        </div>
+        <div class="ci-social">
+          <a href="#" class="ci-soc-btn" aria-label="LinkedIn">in</a>
+          <a href="#" class="ci-soc-btn" aria-label="Twitter">𝕏</a>
+          <a href="#" class="ci-soc-btn" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="ci-soc-btn" aria-label="Facebook">f</a>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal-right">
+        <form class="contact-form glass-card" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000"/>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service…</option>
+                <option>SEO Optimization</option>
+                <option>Social Media Marketing</option>
+                <option>Google Ads / PPC</option>
+                <option>Content Marketing</option>
+                <option>Web Development</option>
+                <option>Branding Strategy</option>
+                <option>Full-Suite Package</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project goals…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg form-submit">
+            <span id="submitText">Send Message</span>
+            <svg id="submitArrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg id="submitLoader" class="spin hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </button>
+        </form>
+        <div id="successMsg" class="success-msg hidden">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>Message Sent!</h3>
+          <p>We'll get back to you within 24 hours. Looking forward to growing with you!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo footer-logo">
+            <img src="src/trizium_logo.jpeg" width="60" height="60" alt="Trizium Logo" class="logo_image"/>
+              Trizium<span> Digital Marketing</span>
+          </a>
+          <p>Your data-driven partner for digital growth. We craft strategies that transform businesses and create lasting impact.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn" class="fsoc">in</a>
+            <a href="#" aria-label="Twitter" class="fsoc">𝕏</a>
+            <a href="#" aria-label="Instagram" class="fsoc">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="fsoc">f</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">SEO Optimization</a></li>
+            <li><a href="#services">Social Media</a></li>
+            <li><a href="#services">Google Ads</a></li>
+            <li><a href="#services">Content Marketing</a></li>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Branding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Get weekly digital marketing insights straight to your inbox.</p>
+          <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+            <input type="email" placeholder="your@email.com" required/>
+            <button type="submit" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+          <p class="nl-note">No spam. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2024 NexaGrowth Digital Marketing Agency. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════ WHATSAPP ═══════════════════════════ -->
+<a href="https://wa.me/916380734670" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="wa-tooltip">Chat with us</span>
+</a>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

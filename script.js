@@ -205,7 +205,7 @@ async function handleSubmit(event) {
      * 5. Copy the Web App URL and paste it below
      * ══════════════════════════════════════════════════════════════
      */
-    const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbye3uGJXAnKKKrQhx0A-95L722PgIiIRt66FwbgNPmWSF9F2cYOVnk1ajq4XBo6rhCl/exec'; // Paste your Google Apps Script Web App URL here
+    const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbw9ZuQRMda-Zkd6YiWBm7siSCsjG5QXwA5x98FeFkHcjnJsd5eDj0sIMg9PlEgrlUIZ/exec'; // Paste your Google Apps Script Web App URL here
 
     if (GOOGLE_SHEET_URL) {
       await fetch(GOOGLE_SHEET_URL, {
@@ -233,16 +233,34 @@ async function handleSubmit(event) {
 }
 
 /* ── Newsletter Subscription ── */
-function subscribeNewsletter(event) {
+async function subscribeNewsletter(event) {
   event.preventDefault();
   const input = event.target.querySelector('input');
   const btn = event.target.querySelector('button');
+  const email = input.value;
+
+  const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbw9ZuQRMda-Zkd6YiWBm7siSCsjG5QXwA5x98FeFkHcjnJsd5eDj0sIMg9PlEgrlUIZ/exec'; // same URL as your contact form
+
+  try {
+    await fetch(GOOGLE_SHEET_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        type: 'newsletter',
+        email: email,
+        timestamp: new Date().toISOString()
+      }),
+      mode: 'no-cors'
+    });
+  } catch (e) {
+    console.log('Newsletter error:', e);
+  }
 
   // Visual feedback
   btn.innerHTML = '✓';
   btn.style.background = '#22C55E';
   input.value = '';
-  input.placeholder = 'You\'re subscribed!';
+  input.placeholder = "You're subscribed!";
 
   setTimeout(() => {
     btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';

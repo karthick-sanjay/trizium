@@ -110,8 +110,8 @@ section { padding: 100px 0; }
 }
 
 .loader-logo {
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   opacity: 0;
   transform: scale(0.7);

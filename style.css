@@ -267,22 +267,30 @@ section {
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 16px;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: clamp(8px, 2vw, 40px);   /* gap shrinks too */
   width: 100%;
   box-sizing: border-box;
 }
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   font-family: var(--font-head);
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 3.5vw, 1.3rem);  /* shrinks with screen */
   font-weight: 800;
   color: #fff;
   margin-right: auto;
+  min-width: 0;        /* allows shrinking */
+  overflow: hidden;
+}
+
+.nav-logo img {
+  width: clamp(60px, 6vw, 36px);   /* shrinks with screen */
+  height: clamp(60px, 6vw, 36px);
+  flex-shrink: 0;
 }
 .nav-logo span { color: var(--green); }
 
@@ -1452,6 +1460,19 @@ footer {
   .about-img-accent { display: none; }
 
   .testi-card { padding: 24px; }
+  .nav-logo {
+    font-size: clamp(0.7rem, 4vw, 1rem);
+  }
+
+  .nav-logo img {
+    width: clamp(40px, 6vw, 28px);
+    height: clamp(40px, 6vw, 28px);
+  }
+
+  .hamburger {
+    flex-shrink: 0;   /* stops hamburger from being squeezed */
+    margin-left: auto;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1300px) {

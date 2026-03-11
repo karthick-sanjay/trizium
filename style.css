@@ -23,6 +23,11 @@
   --font-head: 'Syne', sans-serif;
   --font-body: 'DM Sans', sans-serif;
 }
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
 
 /* ── Reset & Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -55,6 +60,11 @@ img { max-width: 100%; display: block; }
 
 /* ── Sections ── */
 section { padding: 100px 0; }
+section {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 .section-dark { background: var(--navy); color: #fff; }
 
 .section-header {
@@ -261,6 +271,8 @@ section { padding: 100px 0; }
   display: flex;
   align-items: center;
   gap: 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .nav-logo {
   display: flex;
@@ -353,9 +365,19 @@ section { padding: 100px 0; }
   padding: 140px 80px 100px;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.hero-bg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
 .hero-blob {
   position: absolute;
   border-radius: 50%;
@@ -1452,10 +1474,11 @@ footer {
   }
 }
 /* ── Small Mobile (≤480px) ── */
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   .about-pillars { flex-direction: column; }
   .hero-stats { flex-direction: column; align-items: center; }
   .stat-divider { width: 60px; height: 1px; }
   .pricing-grid { max-width: 100%; }
+  .nav-logo span { color: var(--green); font-size:1rem;}
 }
 
